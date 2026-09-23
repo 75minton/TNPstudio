@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>우리는 하나 (10대 그 시절)</title>
+  <meta name="description" content="우리는 하나 (10대 그 시절) - TONY / NIA" />
+  <meta name="share-build-version" content="2026-08-09-v1.5-static-share" />
+  <meta property="og:type" content="music.song" />
+  <meta property="og:title" content="02.우리는 하나 (10대 그 시절) - TONY / NIA" />
+  <meta property="og:description" content="TNP Studio — 일상에 오래 남는 음악" />
+  <meta property="og:image" content="../sound/02.%EC%9A%B0%EB%A6%AC%EB%8A%94%20%ED%95%98%EB%82%98%20(10%EB%8C%80%20%EA%B7%B8%20%EC%8B%9C%EC%A0%88).png?v=20260403" />
+  
+  <meta property="music:musician" content="TONY / NIA" />
+  <meta property="music:song" content="../sound/02.%EC%9A%B0%EB%A6%AC%EB%8A%94%20%ED%95%98%EB%82%98%20(10%EB%8C%80%20%EA%B7%B8%20%EC%8B%9C%EC%A0%88).mp3?v=20260403" />
+  <meta name="theme-color" content="#07090d" />
+  <style>
+    :root {
+      --bg: #07090d;
+      --panel: rgba(18, 22, 31, 0.92);
+      --line: rgba(255, 255, 255, 0.1);
+      --text: #f7fafc;
+      --sub: #a6b0bd;
+      --accent: #7aa7ff;
+      --rose: #ff7aa8;
+    }
+
+    * { box-sizing: border-box; }
+
+    html,
+    body {
+      min-height: 100%;
+      margin: 0;
+      font-family: "Noto Sans KR", "Inter", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 14% 12%, rgba(122, 167, 255, 0.28), transparent 32%),
+        radial-gradient(circle at 86% 8%, rgba(255, 122, 168, 0.18), transparent 28%),
+        linear-gradient(135deg, #05070a, #0c111a 52%, #10131c);
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      padding: 28px 16px;
+    }
+
+    .share-card {
+      width: min(920px, 100%);
+      display: grid;
+      grid-template-columns: minmax(220px, 340px) minmax(0, 1fr);
+      gap: 28px;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      background: var(--panel);
+      box-shadow: 0 26px 70px rgba(0, 0, 0, 0.46);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    .cover {
+      width: 100%;
+      aspect-ratio: 1;
+      border-radius: 26px;
+      object-fit: cover;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      box-shadow: 0 22px 48px rgba(0, 0, 0, 0.36), 0 0 42px rgba(122, 167, 255, 0.16);
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .kicker {
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.18em;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 6vw, 4rem);
+      line-height: 1.03;
+      letter-spacing: -0.06em;
+    }
+
+    .artist {
+      margin-bottom: 22px;
+      color: var(--sub);
+      font-weight: 800;
+    }
+
+    audio {
+      width: 100%;
+      margin: 12px 0 22px;
+      accent-color: var(--accent);
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .btn {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.06);
+      text-decoration: none;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .btn.primary {
+      border-color: var(--accent);
+      background: var(--accent);
+      color: #07090d;
+    }
+
+    .status {
+      margin-top: 16px;
+      color: var(--sub);
+      font-size: 0.86rem;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 720px) {
+      body { place-items: start center; }
+
+      .share-card {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+        border-radius: 24px;
+      }
+
+      .cover {
+        width: min(100%, 360px);
+        margin: 0 auto;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="../studio-theme.css?v=20260923-tnp-v1">
+<link rel="icon" type="image/png" href="../icons/tnp-studio-logo.png"></head>
+
+<body>
+  <main class="share-card">
+    <img alt="우리는 하나 (10대 그 시절) cover" class="cover" src="../sound/02.우리는 하나 (10대 그 시절).png?v=20260403" />
+    <section>
+      <div class="kicker">TNP STUDIO</div>
+      <h1>우리는 하나 (10대 그 시절)</h1>
+      <div class="artist">TONY / NIA</div>
+      <audio controls preload="metadata" src="../sound/02.우리는 하나 (10대 그 시절).mp3?v=20260403"></audio>
+      <div class="actions">
+        <a class="btn primary" href="../index.html?no=2">앱에서 듣기</a>
+        <a class="btn" href="../sound/02.우리는 하나 (10대 그 시절).mp3?v=20260403" download="우리는 하나 (10대 그 시절).mp3">MP3 다운로드</a>
+        <button class="btn" id="shareAgain" type="button">공유하기</button>
+      </div>
+      <p class="status" id="status">공유 받은 곡을 바로 미리듣기 할 수 있습니다.</p>
+    </section>
+  </main>
+
+  <script>
+    const sharePayload = {
+      title: "우리는 하나 (10대 그 시절) - TONY / NIA",
+      text: "TNP Studio 추천곡: 우리는 하나 (10대 그 시절)",
+      url: "../share/2.html"
+    };
+
+    document.getElementById('shareAgain').addEventListener('click', async () => {
+      const status = document.getElementById('status');
+      try {
+        if (navigator.share) {
+          await navigator.share(sharePayload);
+          return;
+        }
+        await navigator.clipboard.writeText(`${sharePayload.title}\n${sharePayload.url}`);
+        status.textContent = '공유 링크를 클립보드에 복사했습니다.';
+      } catch (err) {
+        if (err?.name === 'AbortError') return;
+        window.prompt('공유 링크를 복사하세요.', `${sharePayload.title}\n${sharePayload.url}`);
+      }
+    });
+  </script>
+</body>
+
+</html>
