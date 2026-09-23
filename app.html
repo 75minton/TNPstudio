@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#100c0d" />
+  <meta name="app-version" content="20260924-tnp-v2" />
+  <meta name="asset-version" content="20260924-tnp-v2" />
+  
+  
+  
+  <meta name="referrer" content="same-origin" />
+  <title>함께하는 TNP Studio 뮤직 플레이어 설치</title>
+  <link rel="manifest" href="./manifest.json?v=20260924-tnp-v2">
+  
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="./icons/tnp-studio-logo.png">
+  <link rel="icon" type="image/png" href="./icons/tnp-studio-logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  
+
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #07090d;
+      --card: rgba(17, 21, 31, 0.86);
+      --card-strong: rgba(24, 30, 44, 0.94);
+      --text: #f3f7ff;
+      --sub-text: #aeb9ca;
+      --accent: #7aa7ff;
+      --rose: #ff7aa8;
+      --cyan: #6ce3ff;
+      --line: rgba(255,255,255,0.11);
+      --shadow: 0 24px 70px rgba(0,0,0,0.42);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Noto Sans KR", "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 18% 10%, rgba(122,167,255,0.28), transparent 30%),
+        radial-gradient(circle at 86% 22%, rgba(255,122,168,0.18), transparent 32%),
+        linear-gradient(145deg, #05070a 0%, #0d1119 48%, #090a10 100%);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100dvh;
+      padding: 20px;
+      text-align: center;
+      letter-spacing: -0.03em;
+      overflow-x: hidden;
+    }
+
+    .install-card {
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(145deg, rgba(122,167,255,0.15), rgba(255,122,168,0.08)),
+        var(--card);
+      padding: 42px 24px 28px;
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--line);
+      max-width: 430px;
+      width: 100%;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .install-card::after {
+      content: "";
+      position: absolute;
+      right: -86px;
+      bottom: -118px;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      border: 34px solid rgba(122,167,255,0.12);
+      pointer-events: none;
+    }
+
+    .logo-visual {
+      width: 104px;
+      height: 104px;
+      margin: 0 auto 28px;
+      position: relative;
+      z-index: 1;
+      display: grid;
+      place-items: center;
+      border-radius: 30px;
+      background:
+        radial-gradient(circle at 30% 20%, rgba(255,255,255,0.5), transparent 28%),
+        linear-gradient(135deg, var(--accent), var(--rose));
+      box-shadow: 0 20px 54px rgba(122,167,255,0.26);
+    }
+    
+    .logo-visual-svg {
+      width: 72%;
+      height: 72%;
+      fill: #07101f;
+    }
+
+    h1 {
+      position: relative;
+      z-index: 1;
+      font-size: clamp(1.65rem, 5vw, 2.05rem);
+      font-weight: 900;
+      margin-bottom: 12px;
+      letter-spacing: -0.07em;
+    }
+    
+    h1 span {
+      color: var(--accent);
+      text-shadow: 0 0 22px rgba(122,167,255,0.28);
+    }
+
+    p {
+      position: relative;
+      z-index: 1;
+      font-size: 1rem;
+      color: var(--sub-text);
+      line-height: 1.68;
+      margin-bottom: 28px;
+      word-break: keep-all;
+    }
+
+    /* 공통 버튼 스타일 */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      min-height: 56px;
+      padding: 10px 16px;
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 18px;
+      font-size: 1.04rem;
+      font-weight: 900;
+      cursor: pointer;
+      transition: transform 0.16s, box-shadow 0.2s, background-color 0.2s;
+      text-decoration: none;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 32px rgba(122,167,255,0.22);
+    }
+    .btn:active { transform: scale(0.985); }
+
+    #installBtn {
+      background: linear-gradient(135deg, var(--accent), #a7c4ff);
+      color: #07101f;
+      border-color: transparent;
+      box-shadow: 0 16px 38px rgba(122,167,255,0.24);
+    }
+    #installBtn[hidden] { display: none !important; }
+
+    .btn-outline {
+      background-color: rgba(255,255,255,0.065);
+      border: 1px solid rgba(122,167,255,0.34);
+      color: var(--text);
+      margin-top: 10px;
+    }
+	
+	
+	#iosInstructions {
+      color: var(--accent) !important;
+      background: rgba(122,167,255,0.10);
+      padding: 14px;
+      border-radius: 16px;
+      border: 1px solid rgba(122,167,255,0.20);
+    }
+
+    #inAppNotice {
+      display: none;
+      position: relative;
+      z-index: 1;
+      background-color: rgba(255,255,255,0.06);
+      padding: 20px;
+      border-radius: 20px;
+      border: 1px dashed rgba(122,167,255,0.35);
+    }
+    #inAppNotice p { margin-bottom: 15px; color: var(--text); font-size: 0.95rem; }
+    
+    #safariGuide {
+      display: none;
+      text-align: left;
+      position: relative;
+      z-index: 1;
+      background:
+        radial-gradient(circle at 15% 0%, rgba(122,167,255,0.18), transparent 34%),
+        rgba(255,255,255,0.06);
+      padding: 20px;
+      border-radius: 20px;
+      border: 1px dashed rgba(122,167,255,0.38);
+      margin-bottom: 25px;
+    }
+    #safariGuide p.title {
+      color: var(--accent);
+      font-weight: 800;
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    #safariGuide p.desc {
+      color: var(--text);
+      font-size: 0.95rem;
+      line-height: 1.8;
+      margin-bottom: 0;
+    }
+
+    #androidOutBtn {
+      background: linear-gradient(135deg, var(--accent), var(--cyan)) !important;
+      color: #07101f !important;
+      border-color: transparent !important;
+    }
+
+    @media (max-width: 480px) {
+      body { padding: 14px; }
+      .install-card {
+        padding: 34px 18px 22px;
+        border-radius: 24px;
+      }
+      .logo-visual {
+        width: 92px;
+        height: 92px;
+        margin-bottom: 24px;
+      }
+      .btn {
+        min-height: 52px;
+        border-radius: 16px;
+        font-size: 0.96rem;
+      }
+      p {
+        font-size: 0.94rem;
+        line-height: 1.62;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="./studio-theme.css?v=20260924-tnp-v2">
+<script defer src="./pwa-install.js?v=20260924-tnp-v2"></script>
+</head>
+<body>
+
+  <div class="install-card">
+    <div class="logo-visual">
+      <img src="./icons/tnp-studio-logo.png" width="120" height="120" alt="TNP Studio 로고" style="border-radius:20px">
+    </div>
+    
+    <h1>TNP Studio <span id="page-status">Music 앱 설치</span> </h1>
+    <p id="page-description">TNP Studio의 음악을 듣는 <br> 전용 플레이어를 홈 화면에 설치하고<br>편리하게 감상하세요.</p>
+
+    <div id="safariGuide">
+      <p class="title">🍎 Safari 앱 설치 가이드</p>
+      <p class="desc">
+        1. 화면 하단의 <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%237AA7FF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8'%3E%3C/path%3E%3Cpolyline points='16 6 12 2 8 6'%3E%3C/polyline%3E%3Cline x1='12' y1='2' x2='12' y2='15'%3E%3C/line%3E%3C/svg%3E" alt="공유" style="vertical-align: middle;"> <b>공유</b> 버튼을 누르세요.<br>
+        2. 메뉴를 위로 올려 <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%237AA7FF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='3' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='12' y1='8' x2='12' y2='16'%3E%3C/line%3E%3Cline x1='8' y1='12' x2='16' y2='12'%3E%3C/line%3E%3C/svg%3E" alt="추가" style="vertical-align: middle;"> <b>'홈 화면에 추가'</b>를 선택하세요.<br>
+        3. 우측 상단의 <b>'추가'</b>를 누르면 완료됩니다!
+      </p>
+    </div>
+
+    <button id="installBtn" class="btn" hidden></button>
+
+    <div id="inAppNotice">
+      <p>현재 앱(카톡 등)에서는 홈 화면 설치가 불가능합니다.</p>
+      
+      <p id="iosInstructions" style="display:none; font-size: 0.9rem; color: var(--accent);">
+        하단 메뉴의 <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%237AA7FF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8'%3E%3C/path%3E%3Cpolyline points='16 6 12 2 8 6'%3E%3C/polyline%3E%3Cline x1='12' y1='2' x2='12' y2='15'%3E%3C/line%3E%3C/svg%3E" alt="공유" style="vertical-align: middle;"> 버튼을 누른 후<br><b>'Safari로 열기'</b>를 선택해주세요.
+      </p>
+
+      <a href="#" id="androidOutBtn" class="btn btn-outline" style="display:none; background-color: var(--text); color: black;">
+        Chrome/Safari/삼성 브라우저로<br> 빠른 앱 설치 (최적 실행 화면)
+      </a>
+      <br><br>
+      <button id="viewBtn" class="btn btn-outline" onclick="javascript:window.location.replace('./');">
+        그냥 웹에서 들을래요<br> (화면 스크롤)
+      </button>
+    </div>
+  </div>
+
+  
+</body>
+</html>

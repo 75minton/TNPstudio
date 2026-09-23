@@ -1,0 +1,133 @@
+{
+  "version": "2026-08-09-v2.0-guide",
+  "updatedAt": "2026-08-24T00:00:00+09:00",
+  "songs": [
+    {
+      "id": "we-are-75-rabbits",
+      "title": "함께하는 75 민턴 (Intro)",
+      "artist": "TONY / NIA",
+      "cover": "./sound/01.함께하는 75 민턴 (Intro).png?v=202604041",
+      "url": "./sound/01.함께하는 75 민턴 (Intro).mp3?v=202604041",
+      "lrc": "./sound/01.함께하는 75 민턴 (Intro).lrc?v=202604041",
+      "youtube": ""
+    },
+    {
+      "id": "we-are-one-teen-days",
+      "title": "우리는 하나 (10대 그 시절)",
+      "artist": "TONY / NIA",
+      "cover": "./sound/02.우리는 하나 (10대 그 시절).png?v=20260403",
+      "url": "./sound/02.우리는 하나 (10대 그 시절).mp3?v=20260403",
+      "lrc": "./sound/02.우리는 하나 (10대 그 시절).lrc?v=20260403",
+      "youtube": ""
+    },
+    {
+      "id": "The-spring-remaining-for-us",
+      "title": "우리에게 남은 봄",
+      "artist": "TONY PARK",
+      "cover": "./sound/03.우리에게 남은 봄.png?v=20260403",
+      "url": "./sound/03.우리에게 남은 봄.mp3?v=20260403",
+      "lrc": "./sound/03.우리에게 남은 봄.lrc?v=20260403",
+      "youtube": "https://youtu.be/ATgsGn-bhkE"
+    },
+    {
+      "id": "Smashing-My-Night",
+      "title": "Smashing My Night",
+      "artist": "NIA PARK",
+      "cover": "./sound/04.Smashing My Night.png?v=20260403",
+      "url": "./sound/04.Smashing My Night.mp3?v=20260403",
+      "lrc": "./sound/04.Smashing My Night.lrc?v=20260403",
+      "youtube": "https://youtu.be/lSiUCVuvMoI"
+    },
+    {
+      "id": "You-are-always-here-Part1",
+      "title": "언제나 네가 있어 - Part1",
+      "artist": "TONY PARK",
+      "cover": "./sound/05.언제나 네가 있어 - Part1.png?v=20260403",
+      "url": "./sound/05.언제나 네가 있어 - Part1.mp3?v=20260403",
+      "lrc": "./sound/05.언제나 네가 있어 - Part1.lrc?v=20260403",
+      "youtube": ""
+    },
+    {
+      "id": "You-are-always-here-Part2",
+      "title": "언제나 네가 있어 - Part2",
+      "artist": "TONY PARK",
+      "cover": "./sound/06.언제나 네가 있어 - Part2.png?v=20260903",
+      "url": "./sound/06.언제나 네가 있어 - Part2.mp3?v=20260903",
+      "lrc": "./sound/06.언제나 네가 있어 - Part2.lrc?v=20260403",
+      "youtube": ""
+    },
+    {
+      "id": "seven-five-rabbits",
+      "title": "Seven Five Rabbits",
+      "artist": "TONY / NIA",
+      "cover": "./sound/07.Seven Five Rabbits.png?v=20260403",
+      "url": "./sound/07.Seven Five Rabbits.mp3?v=20260403",
+      "lrc": "./sound/07.Seven Five Rabbits.lrc?v=20260403",
+      "youtube": ""
+    },
+    {
+      "id": "Court-Light-Part1",
+      "title": "Court Light - Part1",
+      "artist": "TRINITY",
+      "cover": "./sound/08.Court Light - Part1.png?v=20260517",
+      "url": "./sound/08.Court Light - Part1.mp3?v=20260517",
+      "lrc": "./sound/08.Court Light - Part1.lrc?v=20260517",
+      "youtube": "https://youtu.be/MuJx_nuKm_g"
+    },
+    {
+      "id": "Court-Light-Part2",
+      "title": "Court Light - Part2",
+      "artist": "TRINITY",
+      "cover": "./sound/09.Court Light - Part2.png?v=20260824",
+      "url": "./sound/09.Court Light - Part2.mp3?v=20260518",
+      "lrc": "./sound/09.Court Light - Part2.lrc?v=20260518",
+      "youtube": "https://youtu.be/FfGDgFUEDlg"
+    },
+    {
+      "id": "Light-Up-My-Day",
+      "title": "Light Up My Day",
+      "artist": "TRINITY - CHAERIN",
+      "cover": "./sound/10.Light Up My Day.png?v=20260606",
+      "url": "./sound/10.Light Up My Day.mp3?v=20260606",
+      "lrc": "./sound/10.Light Up My Day.lrc?v=20260606",
+      "youtube": "https://youtu.be/X1_WX8pW8z0"
+    },
+    {
+      "id": "Between-the-Light",
+      "title": "Between the Light",
+      "artist": "TRINITY",
+      "cover": "./sound/11.Between the Light.png?v=20260606",
+      "url": "./sound/11.Between the Light.mp3?v=20260606",
+      "lrc": "./sound/11.Between the Light.lrc?v=20260606",
+      "youtube": "https://youtu.be/icEyWVHpTjc"
+    },
+    {
+      "id": "The-voice-that-believes-in-you",
+      "title": "너를 믿는 목소리",
+      "artist": "TRINITY - JIWOO",
+      "cover": "./sound/12.너를 믿는 목소리.png?v=20260621",
+      "url": "./sound/12.너를 믿는 목소리.mp3?v=20260621",
+      "lrc": "./sound/12.너를 믿는 목소리.lrc?v=20260621",
+      "youtube": ""
+    },
+    {
+      "id": "we-go-together",
+      "title": "우린 함께 간다",
+      "artist": "TONY PARK",
+      "cover": "./sound/13.우린 함께 간다.png?v=20260805",
+      "url": "./sound/13.우린 함께 간다.mp3?v=20260805",
+      "lrc": "./sound/13.우린 함께 간다.lrc?v=20260805",
+      "youtube": ""
+    },
+   {
+      "id": "the-tenth-season",
+      "title": "THE TENTH SEASON",
+      "artist": "YOUA",
+      "cover": "./sound/THE TENTH SEASON.png?v=20260923",
+      "url": "./sound/THE TENTH SEASON.mp3?v=20260923",
+      "lrc": "./sound/THE TENTH SEASON.lrc?v=20260923",
+      "youtube": ""
+    }
+
+  ]
+}
